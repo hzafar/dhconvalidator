@@ -67,11 +67,12 @@ class DocumentToPaperMapper {
       }
 
       String title = paperElement.getFirstChildElement("title").getValue();
+      String submissionAbstract = paperElement.getFirstChildElement("abstract").getValue();
       String keywords = paperElement.getFirstChildElement("keywords").getValue();
       String topics = paperElement.getFirstChildElement("topics").getValue();
       String contributionType = paperElement.getFirstChildElement("contribution_type").getValue();
 
-      result.add(new Paper(paperId, title, authors, keywords, topics, contributionType));
+      result.add(new Paper(paperId, title, submissionAbstract, authors, keywords, topics, contributionType));
     }
 
     return result;

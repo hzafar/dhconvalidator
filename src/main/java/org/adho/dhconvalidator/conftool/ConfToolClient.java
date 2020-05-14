@@ -196,6 +196,7 @@ public class ConfToolClient implements UserProvider, PaperProvider {
       urlBuilder.append("&form_export_papers_options[]=authors_extended_columns");
       urlBuilder.append("&form_export_papers_options[]=authors_extended_email");
       urlBuilder.append("&form_export_papers_options[]=authors_extended_organisations");
+      urlBuilder.append("&form_export_papers_options[]=abstracts");
     }
 
     if (status != null) {

@@ -24,6 +24,7 @@ public class DemoPaperProvider implements PaperProvider {
         new Paper(
             1,
             "DHConvalidator - Test",
+            "Sample abstract",
             Collections.singletonList(
                 new User(
                     user.getFirstName(),
@@ -40,6 +41,7 @@ public class DemoPaperProvider implements PaperProvider {
     return new Paper(
         paperId,
         "DHConvalidator - Test",
+        "Sample abstract",
         Collections.singletonList(
             new User(
                 user.getFirstName(), user.getLastName(), "University of Hamburg", user.getEmail())),
